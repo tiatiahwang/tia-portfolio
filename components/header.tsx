@@ -1,10 +1,15 @@
 'use client';
 
+import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useSelectedContext } from '@/context/selected-context';
 import { links } from '@/lib/data';
 
 export default function Header() {
+  const { selected, setSelected, setTimeOfLastClick } =
+    useSelectedContext();
+
   return (
     <header className='z-[999] relative'>
       <motion.div
@@ -23,9 +28,29 @@ export default function Header() {
             >
               <Link
                 href={link.hash}
-                className='flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition'
+                className={clsx(
+                  'flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition',
+                  {
+                    'text-gray-950': selected === link.name,
+                  },
+                )}
+                onClick={() => {
+                  setSelected(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {link.name}
+                {selected === link.name && (
+                  <motion.span
+                    className='bg-gray-100 rounded-full absolute inset-0 -z-10'
+                    layoutId='selected'
+                    transition={{
+                      type: 'spring',
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  />
+                )}
               </Link>
             </motion.li>
           ))}
