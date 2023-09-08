@@ -1,5 +1,6 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+import { Toaster } from 'react-hot-toast';
 
 import Header from '@/components/header';
 import SelectedContextProvider from '@/context/selected-context';
@@ -31,6 +32,7 @@ export default function RootLayout({
         <SelectedContextProvider>
           <Header />
           {children}
+          <Toaster position='top-right' />
         </SelectedContextProvider>
       </body>
     </html>
