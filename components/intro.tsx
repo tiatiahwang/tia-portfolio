@@ -9,10 +9,13 @@ import {
   BsLinkedin,
 } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
+import { useSelectedContext } from '@/context/selected-context';
 import useSectionInView from '@/hook/use-section-in-view';
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.5);
+  const { setSelected, setTimeOfLastClick } =
+    useSelectedContext();
 
   return (
     <section
@@ -93,6 +96,10 @@ const Intro = () => {
         className='flex flex-col sm:flex-row justify-center items-center gap-3 px-4 text-lg font-medium'
       >
         <Link
+          onClick={() => {
+            setSelected(link.name);
+            setTimeOfLastClick(Date.now());
+          }}
           href='#contact'
           className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
         >

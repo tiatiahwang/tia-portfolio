@@ -35,7 +35,7 @@ export default function Header() {
                   },
                 )}
                 onClick={() => {
-                  setSelected(link.name);
+                  setSelected('Contact');
                   setTimeOfLastClick(Date.now());
                 }}
               >
