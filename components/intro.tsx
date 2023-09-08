@@ -97,7 +97,7 @@ const Intro = () => {
       >
         <Link
           onClick={() => {
-            setSelected(link.name);
+            setSelected('Contact');
             setTimeOfLastClick(Date.now());
           }}
           href='#contact'
@@ -107,18 +107,18 @@ const Intro = () => {
           <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
         <a
-          className='group cursor-pointer bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10'
+          className='group cursor-pointer bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack'
           href='/CV.pdf'
           download
         >
           Download CV{' '}
           <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
         </a>
-        <a className='cursor-pointer bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10'>
+        <a className='cursor-pointer bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack'>
           <BsLinkedin />
         </a>
         <a
-          className='cursor-pointer bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition border border-black/10'
+          className='cursor-pointer bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition borderBlack'
           href='https://github.com/tiatiahwang'
           target='_blank'
         >
