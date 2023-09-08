@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaPaperclip } from 'react-icons/fa';
+import { sendEmail } from '@/actions/sendEmail';
 import useSectionInView from '@/hook/use-section-in-view';
 import SectionHeading from './section-heading';
 
@@ -29,7 +30,12 @@ const Contact = () => {
         </a>{' '}
         or through this form.
       </p>
-      <form className='mt-10 flex flex-col'>
+      <form
+        className='mt-10 flex flex-col'
+        action={async (formData) =>
+          await sendEmail(formData)
+        }
+      >
         <input
           className='h-14 px-4 rounded-lg borderBlack outline-none focus:border-black focus:border-2'
           type='email'
