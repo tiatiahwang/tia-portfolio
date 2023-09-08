@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
 
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 import SelectedContextProvider from '@/context/selected-context';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -32,6 +33,7 @@ export default function RootLayout({
         <SelectedContextProvider>
           <Header />
           {children}
+          <Footer />
           <Toaster position='top-right' />
         </SelectedContextProvider>
       </body>
