@@ -8,7 +8,7 @@ const SectionDivider = () => {
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ dealy: 0.125 }}
-      className='bg-gray-200 my-24 h-16 w-1 rounded-full hidden sm:block'
+      className='bg-gray-200 my-24 h-16 w-1 rounded-full hidden sm:block dark:bg-opacity-20'
     ></motion.div>
   );
 };

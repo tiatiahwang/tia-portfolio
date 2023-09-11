@@ -21,7 +21,7 @@ const Contact = () => {
       viewport={{ once: true }}
     >
       <SectionHeading title='Contact Me' />
-      <p className='text-gray-700 -mt-6'>
+      <p className='text-gray-700 -mt-6 dark:text-white/80'>
         Please contact me directly at{' '}
         <a
           className='underline'
@@ -32,7 +32,7 @@ const Contact = () => {
         or through this form.
       </p>
       <form
-        className='mt-10 flex flex-col'
+        className='mt-10 flex flex-col dark:text-black/80'
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -45,7 +45,8 @@ const Contact = () => {
         }}
       >
         <input
-          className='h-14 px-4 rounded-lg borderBlack outline-none focus:border-black focus:border-2'
+          className='h-14 px-4 rounded-lg borderBlack outline-none focus:border-black focus:border-2
+                  dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:focus:border-none transition-all'
           type='email'
           name='senderEmail'
           required
@@ -53,7 +54,8 @@ const Contact = () => {
           placeholder='Your Email'
         />
         <textarea
-          className='h-52 my-3 rounded-lg borderBlack p-4 resize-none outline-none focus:border-black focus:border-2'
+          className='h-52 my-3 rounded-lg borderBlack p-4 resize-none outline-none focus:border-black focus:border-2
+                  dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:focus:border-none transition-all'
           name='message'
           required
           maxLength={5000}

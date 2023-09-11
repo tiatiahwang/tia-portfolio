@@ -1,44 +1,18 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import { BsMoon, BsSun } from 'react-icons/bs';
-
-type Theme = 'light' | 'dark';
+import { useTheme } from '@/context/theme-context';
 
 const ThemeSwitch = () => {
-  const [theme, setTheme] = useState<Theme>('light');
-
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-      window.localStorage.setItem('theme', 'dark');
-    } else {
-      setTheme('light');
-      window.localStorage.setItem('theme', 'light');
-    }
-  };
-
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem(
-      'theme',
-    ) as Theme | null;
-
-    if (localTheme) {
-      setTheme(localTheme);
-    } else if (
-      window.matchMedia('(prefers-color-scheme: dark')
-        .matches
-    ) {
-      setTheme('dark');
-    }
-  }, []);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button
       onClick={toggleTheme}
       className='fixed bottom-5 right-5 bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] 
-                    border border-white border-opacity-40 rounded-full shadow-2xl flex items-center justify-center
-                    hover:scale-[1.15] active:scale-105 transition-all'
+                border border-white border-opacity-40 rounded-full shadow-2xl flex items-center justify-center
+                hover:scale-[1.15] active:scale-105 transition-all
+                dark:bg-gray-950'
     >
       {theme === 'light' ? <BsSun /> : <BsMoon />}
     </button>
