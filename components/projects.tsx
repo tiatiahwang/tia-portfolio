@@ -12,7 +12,7 @@ const Projects = () => {
     <section
       ref={ref}
       id='projects'
-      className='scroll-mt-28'
+      className='scroll-mt-28 mb-28'
     >
       <SectionHeading title='My Projects' />
       <div>
