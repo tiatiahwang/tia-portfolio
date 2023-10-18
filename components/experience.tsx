@@ -19,7 +19,7 @@ const Experience = () => {
     <section
       ref={ref}
       id='experience'
-      className='scroll-mt-28 mb-28 sm:mb-40'
+      className='scroll-mt-28 mb-40 md:mb-0'
     >
       <SectionHeading title='My Experience' />
       <VerticalTimeline lineColor=''>
@@ -56,7 +56,7 @@ const Experience = () => {
               <h3 className='font-semibold capitalize'>
                 {data.title}
               </h3>
-              <p className='font-normal !mt-0'>
+              <p className='font-normal !text-sm !text-gra !mt-0'>
                 {data.location}
               </p>
               <p className='!mt-1 !font-normal text-gray-700 dark:text-white/75'>

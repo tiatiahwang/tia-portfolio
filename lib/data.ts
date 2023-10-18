@@ -44,9 +44,9 @@ export const experiencesData = [
     title: 'Front-End Developer',
     location: 'Seoul, South Korea',
     description:
-      'I worked as a front-end developer for 6 months in e-commerce start-up.',
+      'I worked as a front-end developer for 5 months in e-commerce company.',
     icon: React.createElement(CgWorkAlt),
-    date: '2022.07 - 2022.12',
+    date: '2022.07 - 2022.11',
   },
   {
     title: 'Front-End Developer',
@@ -60,9 +60,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'Chchats',
+    title: 'CHCHATS',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
+      'Designed and fully developed community site.',
     tags: ['React', 'Next.js', 'Tailwind', 'Prisma'],
     imageUrl: exampleImg,
   },
@@ -89,23 +89,17 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
   'React',
   'Next.js',
+  'JavaScript',
+  'TypeScript',
+  'HTML',
+  'CSS',
+  'Tailwind CSS',
+  'Framer Motion',
+  'Redux',
   'Node.js',
   'Git',
-  'Tailwind',
   'Prisma',
-  'MongoDB',
-  'Redux',
-  'GraphQL',
-  'Apollo',
   'Express',
-  'PostgreSQL',
-  'Python',
-  'Django',
-  'Framer Motion',
 ] as const;

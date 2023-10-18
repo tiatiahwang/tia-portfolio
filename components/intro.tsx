@@ -60,34 +60,19 @@ const Intro = () => {
         animate={{ opacity: 1 }}
         className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl'
       >
-        <span className='font-bold'>
-          Hello, I&apos;m Tia.
-        </span>{' '}
+        Hello, my name is{' '}
+        <span className='font-bold'>Tia Hwang</span>.
+        <br />
         I&apos;m a{' '}
         <span className='font-bold'>
-          front-end developer
+          Front-End Developer
         </span>{' '}
-        I&apos;m a{' '}
-        <span className='font-bold'>
-          front-end developer
-        </span>{' '}
-        I&apos;m a{' '}
-        <span className='font-bold'>
-          front-end developer
-        </span>{' '}
-        I&apos;m a{' '}
-        <span className='font-bold'>
-          front-end developer
-        </span>{' '}
-        I&apos;m a{' '}
-        <span className='font-bold'>
-          front-end developer
-        </span>{' '}
-        with <span className='font-bold'>1 year</span> of
-        experience. I enjoy building{' '}
-        <span className='italic'>sites & apps</span>. My
-        focus is{' '}
-        <span className='underline'>React (Next.js)</span>.
+        with <span className='font-bold'>about a year</span>{' '}
+        of experience. I enjoy building{' '}
+        <span className='italic'>sites & apps</span>.<br />
+        My focus is{' '}
+        <span className='underline'>React and Next.js</span>
+        .
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
