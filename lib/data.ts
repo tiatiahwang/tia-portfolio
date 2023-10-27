@@ -36,7 +36,7 @@ export const experiencesData = [
     title: 'Graduated bootcamp',
     location: 'Seoul, South Korea',
     description:
-      'I graduated after 6 months of studying. I found a job as a front-end developer.',
+      'Completed intensive 6 months of coding bootcamp. After-which I was employed as a front-end developer',
     icon: React.createElement(LuGraduationCap),
     date: '2022',
   },
@@ -44,7 +44,7 @@ export const experiencesData = [
     title: 'Front-End Developer',
     location: 'Seoul, South Korea',
     description:
-      'I worked as a front-end developer for 5 months in e-commerce company.',
+      'I worked as a front-end developer for 5 months in an e-commerce company.',
     icon: React.createElement(CgWorkAlt),
     date: '2022.07 - 2022.11',
   },
@@ -52,7 +52,7 @@ export const experiencesData = [
     title: 'Front-End Developer',
     location: 'San Jose, CA',
     description:
-      "I'm now studying more about Next.js and React. I'm open to full-time opportunities.",
+      "I'm rigorously studying more about Next.js and React. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: '2023 - present',
   },

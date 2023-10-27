@@ -45,12 +45,12 @@ function Project({
       className='group mb-3 sm:mb-8 last:mb-0'
     >
       <section
-        className='relative bg-gray-100 rounded-lg min-w-[42rem] border border-black/5 overflow-hidden 
+        className='relative bg-gray-100 rounded-lg sm:w-full md:min-w-[42rem] border border-black/5 overflow-hidden 
                   sm:pr-8 sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8
                   dark:bg-white/10 dark:hover:bg-white/20'
       >
         <Link href={url} target='_blank'>
-          <div className='pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
+          <div className='pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 md:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
             <h3 className='text-2xl font-semibold'>
               {title}
             </h3>
