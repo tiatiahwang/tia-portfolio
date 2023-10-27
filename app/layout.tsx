@@ -13,6 +13,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Tia',
   description: 'Portfolio',
+  icons: {
+    icon: '/icon.ico',
+  },
 };
 
 export default function RootLayout({

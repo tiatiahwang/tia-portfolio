@@ -14,7 +14,7 @@ const Projects = () => {
       id='projects'
       className='scroll-mt-28 mb-40 md:mb-0'
     >
-      <SectionHeading title='My Projects' />
+      <SectionHeading title='My Project' />
       <div>
         {projectsData.map((project) => (
           <Project key={project.title} {...project} />

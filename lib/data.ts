@@ -2,7 +2,7 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import exampleImg from '@/public/example.jpg';
+import chchatsImg from '@/public/chchats.jpg';
 
 export const links = [
   {
@@ -64,27 +64,8 @@ export const projectsData = [
     description:
       'Designed and fully developed community site.',
     tags: ['React', 'Next.js', 'Tailwind', 'Prisma'],
-    imageUrl: exampleImg,
-  },
-  {
-    title: 'rmtDev',
-    description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind',
-      'Redux',
-    ],
-    imageUrl: exampleImg,
-  },
-  {
-    title: 'Word Analytics',
-    description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: exampleImg,
+    imageUrl: chchatsImg,
+    url: 'https://www.chchats.com',
   },
 ] as const;
 
@@ -97,9 +78,8 @@ export const skillsData = [
   'CSS',
   'Tailwind CSS',
   'Framer Motion',
-  'Redux',
-  'Node.js',
-  'Git',
   'Prisma',
+  'Node.js',
   'Express',
+  'Git',
 ] as const;
