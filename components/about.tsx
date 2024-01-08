@@ -18,26 +18,13 @@ const About = () => {
     >
       <SectionHeading title='About Me' />
       <p>
-        My core stack is{' '}
-        <span className='font-medium'>
-          React.js and Next.js
-        </span>
-        .<br /> I am currently looking for a{' '}
-        <span className='font-medium'>
-          Front-End Developer position.
-        </span>
+        My core stack is <span className='font-medium'>React.js and Next.js</span>
+        .<br /> I am currently looking for a <span className='font-medium'>Front-End Developer position.</span>
       </p>
       <p>
-        <span className='italic'>
-          When I&apos;m not coding{' '}
-        </span>
-        , I enjoy working out and spending time with my dog.
-        I also enjoy{' '}
-        <span className='font-medium'>
-          learning new things
-        </span>
-        . I am currently learning about{' '}
-        <span className='font-medium'>flutter</span>.
+        <span className='italic'>When I&apos;m not coding </span>, I enjoy working out and spending time with my dog. I
+        also enjoy <span className='font-medium'>learning new things</span>. I am currently learning about{' '}
+        <span className='font-medium'>React Native</span>.
       </p>
     </motion.section>
   );
