@@ -22,9 +22,10 @@ const About = () => {
         .<br /> I am currently looking for a <span className='font-medium'>Front-End Developer position.</span>
       </p>
       <p>
-        <span className='italic'>When I&apos;m not coding </span>, I enjoy working out and spending time with my dog. I
-        also enjoy <span className='font-medium'>learning new things</span>. I am currently learning about{' '}
-        <span className='font-medium'>React Native</span>.
+        <span className='italic'>When I&apos;m not coding </span>, I enjoy working out and spending time with my dog.
+        <br /> I also enjoy <span className='font-medium'>working with others</span>.<br /> I am currently{' '}
+        <span className='font-medium'>collaborating with others</span> on a side project <br />
+        to launch a community website tailored for runners.
       </p>
     </motion.section>
   );
